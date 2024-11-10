@@ -1,0 +1,325 @@
+@font-face {
+    font-family: "varsity";
+    src: url(fonts/varsity_regular.ttf) format("truetype"); 
+}
+
+@font-face {
+    font-family: "britanic";
+    src: url(fonts/BRITANIC.TTF) format("truetype"); 
+}
+
+@font-face {
+    font-family: "mod";
+    src: url(fonts/MOD20.TTF) format("truetype"); 
+}
+
+body{
+    background-image:  linear-gradient( rgba(191, 60, 60, 0.342), rgba(0, 0, 0, 0.748)),url(img/fondo\ Grego.jpg);
+    background-size: 100%;
+    background-color: #4f1717;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: "britanic";
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.header_menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0;
+    margin: 10px 10% 0;
+}
+
+.boton{
+    flex-basis: 50px;
+    flex-grow: 1;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+    border: 5px solid  #7d3c3c;
+    background-color: #ffffff;
+    padding: 5px;
+    transition: 1s;
+}
+
+.boton:hover{
+    padding: 10px 20px;
+    font-size: 130%;
+}
+
+.logo{
+    width: 110%;
+    overflow: hidden;
+}
+
+.header_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro_titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border: 5px solid #4f1717;
+    font-size: 1.8rem;
+    color: #7d3c3c;
+    font-family: "varsity";
+}
+
+.nombre{
+    margin: 2.5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 200%;
+    overflow: hidden;
+    text-shadow: #4f1717 0 2px;
+}
+
+.acerca{
+    display: inline-block;
+    text-align: center;
+    margin: 20px 20px;
+    color: #ffffff;
+    text-shadow: black 0 2px;
+    font-size: 150%;
+}
+
+.ciclos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card{
+    flex-basis: 100px;
+    flex-grow: 1;
+    display: inline-block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    transition: 0.1s;
+    overflow: hidden;
+}
+
+.gest, .info, .text{
+    width: 15%;
+    height: 10%;
+    padding: 5px 2px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    transition: 1s;
+}
+.gest{
+    border: 10px solid #bae1d9;
+}
+
+.info{
+    border: 10px solid #4200fe;
+}
+
+.text{
+    border: 10px solid #68d3cc;
+}
+
+.gest:hover, .info:hover, .text:hover{
+    box-shadow: 0 16px 64px 0 rgba(0,0,0,0.2);
+    width: 20%;
+    height: 15%;
+    padding:0 2% 1%;
+    font-size: 120%;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+}
+
+.cuadro_galeria{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 300%;
+    margin-top: 20px;
+}
+
+.cuadro_galeria h2{
+    flex-grow: 1;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 0 -20px;
+}
+
+.slider-box{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% { margin-left: 0; }
+    10% { margin-left: 0; }
+
+    20% { margin-left: -100%; }
+    30% { margin-left: -100%; }
+
+    40% { margin-left: -200%; }
+    50% { margin-left: -200%; }
+
+    60% { margin-left: -300%; }
+    70% { margin-left: -300%; }
+
+    85% { margin-left: -400%; }
+    100% { margin-left: -400%; }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    color: #000;
+    border: 2px solid #7d3c3c;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.creditos{
+    display: inline-block; 
+    text-align: center;
+}
+
+.contact{
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+@media(max-width: 1039px){
+    .boton{
+        flex-basis: 200px;
+        font-size: 120%;
+    }
+}
+
+@media(max-width: 991px){
+    body{
+        background-size: 150%;
+    }
+
+    @media(max-width: 587px){
+        body{
+            background-size: 250%;
+        }
+
+        .header_menu{
+            margin: 10px 0;
+        }
+
+        .boton{            
+            font-size: 150%;
+        }
+
+        @media(max-width: 450px){
+            body{
+                background-size: 280%;
+            } 
+
+        } 
+    }
+
+    .boton{
+        margin: 0 10px;
+        padding: 0 5px;
+    }
+
+    .slider-box{
+        width: 100%;
+    }
+
+    .gest, .info, .text{
+        width: 35%;
+        height: 20%;
+    }
+
+    .gest{
+        border: 7px solid #bae1d9;
+    }
+    
+    .info{
+        border: 7px solid #4200fe;
+    }
+    
+    .text{
+        border: 7px solid #68d3cc;
+    }
+
+    .gest:hover, .info:hover, .text:hover{
+        width: 40%;
+        height: 25%;
+        padding:0 2% 1%;
+        font-size: 120%;
+    }
+
+    .cuadro_galeria{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        font-size: 70%;
+    }
+}
